@@ -9,7 +9,7 @@ group :development, :test do
   gem 'sqlite3-ruby', :require => 'sqlite3'
 end
 
-gem 'ZenTest'
+gem 'ZenTest', '4.6.0'
 gem 'redgreen'
 gem 'test-unit'
 

@@ -9,6 +9,10 @@ group :development, :test do
   gem 'sqlite3-ruby', :require => 'sqlite3'
 end
 
+gem 'ZenTest'
+gem 'redgreen'
+gem 'test-unit'
+
 group :production do
   gem 'pg'
 end
@@ -20,6 +24,7 @@ end
 group :test do
   gem 'rspec-rails'
   gem 'webrat'
+  gem 'spork'
 end
 
 # Gems used only for assets and not required

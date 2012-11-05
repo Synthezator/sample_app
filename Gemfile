@@ -9,10 +9,6 @@ group :development, :test do
   gem 'sqlite3-ruby', :require => 'sqlite3'
 end
 
-gem 'ZenTest', '4.6.0'
-gem 'redgreen'
-gem 'test-unit'
-
 group :production do
   gem 'pg'
 end
@@ -22,6 +18,13 @@ group :development do
 end
 
 group :test do
+  gem 'ZenTest', '4.6.0'
+  gem 'redgreen'
+  gem 'test-unit'
+  gem 'autotest'
+  gem 'autotest-rails-pure'
+  gem 'autotest-fsevent'
+  gem 'autotest-growl'
   gem 'rspec-rails'
   gem 'webrat'
   gem 'spork'

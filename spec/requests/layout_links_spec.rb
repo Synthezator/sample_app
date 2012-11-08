@@ -2,7 +2,9 @@ require 'spec_helper'
 
 describe "LayoutLinks" do
 
-  @base_title = "Ruby on Rails Tutorial Sample App | "
+  before do
+    @base_title = "Ruby on Rails Tutorial Sample App | "
+  end
 
   it "should have a Home page at '/'" do
     get '/'
@@ -26,6 +28,7 @@ describe "LayoutLinks" do
 
   it "should have a signup page at '/signup'" do
     get '/signup'
+@base_title = "Ruby on Rails Tutorial Sample App | "
     response.should have_selector('title', :content => @base_title + "Sign up")
   end
 end

@@ -28,7 +28,6 @@ describe "LayoutLinks" do
 
   it "should have a signup page at '/signup'" do
     get '/signup'
-@base_title = "Ruby on Rails Tutorial Sample App | "
-    response.should have_selector('title', :content => @base_title + "Sign up")
+    response.should have_selector('title', :content => @base_title + "Sign Up")
   end
 end
